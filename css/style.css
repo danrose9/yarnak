@@ -1,37 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-html {
+html,
+body {
     height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
-body {
+html {
     font-family: "Roboto", sans-serif;
     background: url("../images/main.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
 }
 
-header {
+/* header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 
 .nav {
-    border-bottom: 1px solid #eaeaeb;
+    border-bottom: 1px solid #EAEAEB;
     text-align: right;
     height: 70px;
     line-height: 70px;
 }
+.menu {
+    margin: 0 30px 0 0;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+    font-size: 30px;
+}
 
-li,
+/* li,
 a {
-    /* margin: 0 10px; */
+    margin: 0 10px;
     color: #edf0f1;
     text-decoration: none;
-}
+} */
 
 label {
     margin: 0 40px 0 0;
@@ -41,31 +54,24 @@ label {
     width: 26px;
     float: right;
 }
-
 #toggle {
     display: none;
 }
 
-.nav__links {
-    margin: 0 30px 0 0;
-    list-style: none;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 70px;
-}
 
-.nav__links li {
+/* 
+.menu li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav__links li a {
+.menu li a {
     transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover {
+.menu li a:hover {
     color: #0088a9;
-}
+} */
 
 footer {
     position: absolute;
@@ -79,21 +85,20 @@ footer {
         display: block;
         cursor: pointer;
     }
-
-    .nav__links {
+    .menu {
         text-align: center;
         width: 100%;
         display: none;
     }
-
-    .nav__links li {
+    .menu a {
         display: block;
+        border-bottom: 1px solid #EAEAEB;
         margin: 0;
-
+     
     }
-
-    #toggle:checked+.nav__links {
+    #toggle:checked + .menu {
         display: block;
     }
-
+    
+    
 }
