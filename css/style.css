@@ -9,9 +9,10 @@ body {
 
 html {
     font-family: "Roboto", sans-serif;
-    background: url("../images/main.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../images/main.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 /* header {
@@ -26,17 +27,20 @@ html {
     text-align: right;
     height: 70px;
     line-height: 70px;
+    
 }
+
 .menu {
     margin: 0 30px 0 0;
 }
+
 .menu a {
     clear: right;
     text-decoration: none;
-    color: gray;
+    color: #C8C8C8;
     margin: 0 10px;
     line-height: 70px;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 /* li,
@@ -48,14 +52,17 @@ a {
 
 label {
     margin: 0 40px 0 0;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 70px;
     display: none;
     width: 26px;
     float: right;
+    color: #C8C8C8;
 }
+
 #toggle {
     display: none;
+    
 }
 
 
@@ -81,24 +88,30 @@ footer {
 }
 
 @media only screen and (max-width: 760px) {
+    html {
+        background-position: center;
+    }
+
     label {
         display: block;
         cursor: pointer;
     }
+
     .menu {
         text-align: center;
         width: 100%;
         display: none;
     }
+
     .menu a {
         display: block;
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
-     
+
     }
-    #toggle:checked + .menu {
+
+    #toggle:checked+.menu {
         display: block;
     }
-    
-    
+
 }
