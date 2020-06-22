@@ -5,6 +5,7 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
+
 }
 
 html {
@@ -15,19 +16,41 @@ html {
 
 }
 
+body {
+    display: flex;
+}
+
 /* header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 } */
 
+.page-title {
+    font-size: 50px;
+    color: #EAE7DC;
+    flex: 1;
+}
+
+.page-title h3 {
+    font-weight: 200;
+    padding: 0.2em;
+    margin: 0.1em;
+}
+
+.page-title p {
+    font-weight: 100;
+    font-size: 0.7em;
+    padding: 0.5em;
+    margin: 0.1em;
+}
 
 .nav {
-    border-bottom: 1px solid #EAEAEB;
+    /* border-bottom: 1px solid #EAEAEB; */
     text-align: right;
     height: 70px;
     line-height: 70px;
-    
+    flex: 2;
 }
 
 .menu {
@@ -62,7 +85,7 @@ label {
 
 #toggle {
     display: none;
-    
+
 }
 
 
@@ -87,7 +110,7 @@ footer {
     color: #c6a793;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 970px) {
     html {
         background-position: center;
     }
@@ -105,7 +128,7 @@ footer {
 
     .menu a {
         display: block;
-        border-bottom: 1px solid #EAEAEB;
+        /* border-bottom: 1px solid #EAEAEB; */
         margin: 0;
 
     }
