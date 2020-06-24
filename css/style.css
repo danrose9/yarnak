@@ -112,7 +112,7 @@ footer {
 
 @media only screen and (max-width: 970px) {
     html {
-        background-position: center;
+        background-position-x: 25%;
     }
 
     label {
@@ -120,21 +120,22 @@ footer {
         cursor: pointer;
     }
 
+    .nav {
+        flex: none;
+    }
     .menu {
         text-align: center;
-        width: 100%;
+        width: 200px;
         display: none;
     }
 
     .menu a {
         display: block;
-        /* border-bottom: 1px solid #EAEAEB; */
+        border-bottom: 1px solid #EAEAEB;
         margin: 0;
-
     }
 
     #toggle:checked+.menu {
         display: block;
     }
-
 }
