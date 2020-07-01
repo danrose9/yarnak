@@ -1,35 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-html,
-body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-
-}
-
 html {
     font-family: "Roboto", sans-serif;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../images/main.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
-body {
+#container {
+    margin: 0 auto;
+    width: 95%;
     display: flex;
 }
-
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 .page-title {
     font-size: 50px;
     color: #EAE7DC;
     flex: 1;
+}
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    max-width: max-content;
+    height: 70px;
+    line-height: 70px;
+    flex: 2;
 }
 
 .page-title h3 {
@@ -45,16 +44,8 @@ body {
     margin: 0.1em;
 }
 
-.nav {
-    /* border-bottom: 1px solid #EAEAEB; */
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
-    flex: 2;
-}
-
 .menu {
-    margin: 0 30px 0 0;
+    margin: 0 10px 0 0;
 }
 
 .menu a {
@@ -65,13 +56,6 @@ body {
     line-height: 70px;
     font-size: 26px;
 }
-
-/* li,
-a {
-    margin: 0 10px;
-    color: #edf0f1;
-    text-decoration: none;
-} */
 
 label {
     margin: 0 40px 0 0;
@@ -88,21 +72,6 @@ label {
 
 }
 
-
-/* 
-.menu li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.menu li a {
-    transition: all 0.3s ease 0s;
-}
-
-.menu li a:hover {
-    color: #0088a9;
-} */
-
 footer {
     position: absolute;
     bottom: 0;
@@ -110,7 +79,8 @@ footer {
     color: #c6a793;
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1023px) {
+
     html {
         background-position-x: 25%;
     }
@@ -120,9 +90,18 @@ footer {
         cursor: pointer;
     }
 
-    .nav {
-        flex: none;
+    #container {
+        justify-content: space-between;
     }
+
+    .page-title {
+        max-width: 240px;
+    }
+
+    .nav {
+        border-bottom: none;
+    }
+
     .menu {
         text-align: center;
         width: 200px;
@@ -131,11 +110,17 @@ footer {
 
     .menu a {
         display: block;
-        border-bottom: 1px solid #EAEAEB;
         margin: 0;
     }
 
     #toggle:checked+.menu {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #container {
+        display: none;
     }
 }
