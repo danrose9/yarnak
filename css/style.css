@@ -120,7 +120,11 @@ footer {
 
 @media only screen and (max-width: 400px) {
 
-    #container {
-        display: none;
+
+    .page-title {
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        display: flex;
     }
+
 }
