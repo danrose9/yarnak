@@ -92,7 +92,9 @@ figure {
 }
 img {
   border-style: none;
+  cursor: pointer;
 }
+
 code,
 kbd,
 pre,
@@ -242,6 +244,7 @@ hr {
 img {
   vertical-align: middle;
 }
+
 a {
   color: inherit;
 }
@@ -1619,4 +1622,12 @@ a {
 .w3-border-pale-blue,
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
+}
+
+img:hover{
+  transform: scale(1.03);
+}
+.social-media{
+  display: flex;
+  align-content:center;
 }
